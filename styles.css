@@ -5,9 +5,6 @@ body{
 .container{
     max-width: 400px !important;
 }
-.container1{
-    max-width: initial;
-}
 input{
     width:100%;
     text-indent: 0;
@@ -20,4 +17,19 @@ input{
 }
 .btn{
     max-width: 200px;
+}
+.const{
+    position: fixed;
+    z-index: 11111;
+}
+
+.cards{
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cards .card{
+    width: 30%;
+    min-width: 200px;
+    margin: 10px;
 }

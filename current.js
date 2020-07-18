@@ -10,11 +10,12 @@ const getCity= async(city) =>{
     return data;
 };
 
-// const getWeather= async(id) =>{
-//     const base='https://dataservice.accuweather.com/currentconditions/v1/';
-//     const query=`${id}?apikey=${key}`;
-    
-//     const details=await fetch(base+query);
-//     const data=await details.json();
-//     return data[0];
-// };
+const getForecast = async(city) =>{
+    const base='https://api.openweathermap.org/data/2.5/forecast/';
+    const query=`?q=${city}&appid=${key}`;
+
+    const details= await fetch(base+query);
+    const data = await details.json();
+
+    return data;
+};

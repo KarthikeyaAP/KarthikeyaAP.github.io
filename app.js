@@ -3,6 +3,7 @@ const form=document.querySelector('form');
 const dayImg=document.querySelector('.time-img');
 const img=document.querySelector('.img-lot');
 const card=document.querySelector('.card');
+const clear=document.querySelector('.clear');
 
 //get data
 const getDetails=async(city)=>{
@@ -44,6 +45,10 @@ if(localStorage.city !=null){
         .then(data => updateUI(data))
         .catch(err => console.log(err));   
 }
+clear.addEventListener('click', ()=>{
+    localStorage.clear();
+    !card.classList.contains('d-none')?card.classList.add('d-none'):null;
+})
 
 
 // const extra=document.querySelector('.extra1');
