@@ -11,20 +11,23 @@
             <h1 class="text-center">Weather</h1>
             <form class="text-center get-city text-muted">
                 <label for="city text-muted" class="text-center">Enter your Location for Weather information</label><br>
-                <input type="text" name="city" placeholder="Location" class="text-center">
+                <input type="text" name="city" placeholder="Location" class="text-center" autocomplete="off">
             </form>
             <div class="card shadow-lg rounded d-none">
                 <img src="https://via.placeholder.com/400x300" alt="image" class="card-img-top time-img">
                 <div class="img bg-light text-center mx-auto my-0">
                     <img src="" alt="" class="img-lot">
                 </div>
-                <div class="details text-center text-muted text-uppercase my-0">
+                <div class="details text-center text-muted text-uppercase">
                     <h5 class="my-1">City</h5>
                     <div class="my-4">Weather Conditions</div>
                     <div class="my-4 display-4">
                         <span>temp</span>
                         <span>&deg;C</span>
                     </div>
+                </div>
+                <div class="text-center">
+                <a href="more.html" class="my-1 btn btn-primary more">More Details</a>
                 </div>
             </div>
         </div>

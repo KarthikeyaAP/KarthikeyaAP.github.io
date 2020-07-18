@@ -5,6 +5,9 @@ body{
 .container{
     max-width: 400px !important;
 }
+.container1{
+    max-width: initial;
+}
 input{
     width:100%;
     text-indent: 0;
@@ -14,5 +17,7 @@ input{
     border-radius: 50%;
     position: relative;
     top: -50px;
-    bottom: -50px;
+}
+.btn{
+    max-width: 200px;
 }

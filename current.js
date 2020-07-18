@@ -1,20 +1,20 @@
-const key='JQ4sHHSblUw7x4wqAuu53SFojIwbJzcA';
+const key='d38e3b1fdcb50f16aff1b1db466da4f6';
 
 
 const getCity= async(city) =>{
-    const base='https://dataservice.accuweather.com/locations/v1/cities/search';
-    const query=`?apikey=${key}&q=${city}`;
+    const base='https://api.openweathermap.org/data/2.5/weather/';
+    const query=`?q=${city}&appid=${key}`;
 
     const details= await fetch(base+query);
     const data= await details.json();
-    return data[0];
+    return data;
 };
 
-const getWeather= async(id) =>{
-    const base='https://dataservice.accuweather.com/currentconditions/v1/';
-    const query=`${id}?apikey=${key}`;
+// const getWeather= async(id) =>{
+//     const base='https://dataservice.accuweather.com/currentconditions/v1/';
+//     const query=`${id}?apikey=${key}`;
     
-    const details=await fetch(base+query);
-    const data=await details.json();
-    return data[0];
-};
+//     const details=await fetch(base+query);
+//     const data=await details.json();
+//     return data[0];
+// };
