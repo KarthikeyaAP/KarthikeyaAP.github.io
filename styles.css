@@ -1,0 +1,18 @@
+body{
+    background-color: #cc55 !important;
+    height: auto;
+}
+.container{
+    max-width: 400px !important;
+}
+input{
+    width:100%;
+    text-indent: 0;
+}
+.img{
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    bottom: -50px;
+}
