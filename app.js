@@ -22,7 +22,7 @@ const updateUI=(data)=>{
     </div>
     `
     const imgno=data.weather[0].icon;
-    img.setAttribute('src',`http://openweathermap.org/img/wn/${imgno}@2x.png`);
+    img.setAttribute('src',`https://openweathermap.org/img/wn/${imgno}@2x.png`);
     const timeImg=imgno.includes('d')?'img/day.svg':'img/night.svg';
     dayImg.setAttribute('src',timeImg);
     card.classList.contains('d-none')?card.classList.remove('d-none'):null;
