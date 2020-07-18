@@ -30,6 +30,6 @@ input{
 }
 .cards .card{
     width: 30%;
-    min-width: 200px;
+    min-width: 300px;
     margin: 10px;
 }
