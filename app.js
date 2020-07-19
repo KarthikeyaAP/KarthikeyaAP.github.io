@@ -38,6 +38,7 @@ form.addEventListener('submit', (e)=>{
         .then(data => updateUI(data))
         .catch(err => console.log(err));
     localStorage.setItem('city',city);
+    document.body.scrollTop=document.body.scrollHeight
 });
 
 if(localStorage.city !=null){
@@ -65,6 +66,7 @@ button.addEventListener('click',()=>{
                 localStorage.setItem('city',data.city)
         })
         .catch(err => console.log(err));
+    document.body.scrollTop=document.body.scrollHeight
 })
 
 
