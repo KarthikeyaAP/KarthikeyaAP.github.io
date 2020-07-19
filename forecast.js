@@ -48,3 +48,9 @@ window.addEventListener('load',()=>{
     .then(data => updateUI(data))
     .catch(err => console.log(err));
 })
+// console.log(navigator.geolocation.getCurrentPosition(position=>{
+//     console.log(position.coords.latitude,position.coords.longitude);
+// },err=>{console.log(err)}))
+
+// const geocoder=null;
+

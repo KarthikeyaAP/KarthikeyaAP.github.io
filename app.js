@@ -50,6 +50,23 @@ clear.addEventListener('click', ()=>{
     !card.classList.contains('d-none')?card.classList.add('d-none'):null;
 })
 
+const getCurrent=async()=>{
+    const details=await geo();
+    return details;
+}
+
+const button=document.querySelector('.current');
+button.addEventListener('click',()=>{
+    getCurrent()
+        .then( data => {
+            getDetails(data.city)
+                .then( data => updateUI(data))
+                .catch(err => console.log(err))
+                localStorage.setItem('city',data.city)
+        })
+        .catch(err => console.log(err));
+})
+
 
 // const extra=document.querySelector('.extra1');
 // console.log(extra)

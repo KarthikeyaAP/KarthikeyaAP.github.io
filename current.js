@@ -19,3 +19,9 @@ const getForecast = async(city) =>{
 
     return data;
 };
+
+const geo=async()=>{
+    const response= await fetch('https://ipapi.co/json/');
+    const details=await response.json();
+    return details;
+}
